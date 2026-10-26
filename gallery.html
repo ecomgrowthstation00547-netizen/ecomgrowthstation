@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Ecom Growth Station</title>
+  <meta name="description" content="Photos and videos from Ecom Growth Station: account handling, order processing, product hunting, LLC & LTD assistance and the e-commerce academy.">
+  <script>try{if(localStorage.getItem('egs-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="bar bar-top"></div>
+<div class="bar bar-bottom"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<header class="site-nav" id="siteNav">
+  <a href="index.html" class="nav-logo">EGS<small>Ecom Growth Station</small></a>
+  <ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="academy.html">Academy</a></li><li><a href="team.html">Team</a></li><li><a href="gallery.html" class="active">Gallery</a></li><li><a href="join.html">Join Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="hire.html" class="nav-cta">Hire Us</a></li></ul>
+  <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch to day view"><span class="theme-icon">&#9788;</span><span class="theme-label">Day view</span></button>
+  <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu"><span></span><span></span></button>
+</header>
+<section class="page-hero">
+  <canvas id="orbCanvas" data-x="0.82" data-y="0.5"></canvas>
+  <div class="container">
+    <p class="eyebrow">Gallery</p>
+    <h1>Our Work, Our Team, Our Academy.</h1>
+    <p class="lead">Videos and visuals that show how Ecom Growth Station runs accounts, processes orders and teaches digital commerce.</p>
+    
+  </div>
+</section>
+
+<section class="section" id="videos">
+  <div class="container">
+    <p class="eyebrow reveal">Video</p><h2 class="section-title reveal">Brand Reel</h2>
+    <div class="row g-4">
+      <div class="col-lg-8 reveal"><div class="video-frame"><video controls preload="metadata" playsinline poster="media/video/brand-reel-poster.jpg"><source src="media/video/brand-reel.mp4" type="video/mp4">Your browser does not support video.</video></div></div>
+      <div class="col-lg-4 reveal"><p class="lead-text">Meet the station.</p><p>A short look at who we are. Add your own videos (client walkthroughs, academy previews, team intros) by dropping files into <code>media/video</code> and adding a block like this one.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="photos">
+  <div class="container">
+    <p class="eyebrow reveal">Photos</p><h2 class="section-title reveal">Inside Ecom Growth Station</h2>
+    <div class="filters reveal">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="services">Services</button>
+      <button class="filter" data-filter="academy">Academy</button>
+      <button class="filter" data-filter="team">Team</button>
+    </div>
+    <div class="row g-4"><div class="col-md-6 col-lg-4 reveal gal-item" data-cat="services"><a href="media/photos/account-handling.jpg" class="media-card" data-full="media/photos/account-handling.jpg" data-title="Account Handling"><img src="media/photos/account-handling.jpg" alt="Account Handling" loading="lazy"><span class="cap">Account Handling</span></a><p class="gal-note">Listings, inventory and performance, run day to day.</p></div><div class="col-md-6 col-lg-4 reveal gal-item" data-cat="services"><a href="media/photos/order-processing.jpg" class="media-card" data-full="media/photos/order-processing.jpg" data-title="Order Processing"><img src="media/photos/order-processing.jpg" alt="Order Processing" loading="lazy"><span class="cap">Order Processing</span></a><p class="gal-note">Orders processed, tracked and followed to delivery.</p></div><div class="col-md-6 col-lg-4 reveal gal-item" data-cat="services"><a href="media/photos/product-hunting.jpg" class="media-card" data-full="media/photos/product-hunting.jpg" data-title="Product Hunting"><img src="media/photos/product-hunting.jpg" alt="Product Hunting" loading="lazy"><span class="cap">Product Hunting</span></a><p class="gal-note">Data-backed product and supplier research.</p></div><div class="col-md-6 col-lg-4 reveal gal-item" data-cat="services"><a href="media/photos/llc-ltd-formation.jpg" class="media-card" data-full="media/photos/llc-ltd-formation.jpg" data-title="LLC & LTD Assistance"><img src="media/photos/llc-ltd-formation.jpg" alt="LLC & LTD Assistance" loading="lazy"><span class="cap">LLC & LTD Assistance</span></a><p class="gal-note">Formation guidance and paperwork coordination.</p></div><div class="col-md-6 col-lg-4 reveal gal-item" data-cat="academy"><a href="media/photos/academy.jpg" class="media-card" data-full="media/photos/academy.jpg" data-title="E-Commerce Academy"><img src="media/photos/academy.jpg" alt="E-Commerce Academy" loading="lazy"><span class="cap">E-Commerce Academy</span></a><p class="gal-note">Practical marketplace training from practitioners.</p></div><div class="col-md-6 col-lg-4 reveal gal-item" data-cat="team"><a href="media/photos/expert-team.jpg" class="media-card" data-full="media/photos/expert-team.jpg" data-title="Expert Team"><img src="media/photos/expert-team.jpg" alt="Expert Team" loading="lazy"><span class="cap">Expert Team</span></a><p class="gal-note">Specialists working together on every account.</p></div></div>
+    <p class="note reveal">These are illustrative visuals. Replace them with real photos of your team, workspace and academy sessions by overwriting the files in <code>media/photos</code> (same file names).</p>
+  </div>
+</section>
+
+<div class="modal fade" id="photoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl"><div class="modal-content p-3">
+    <div class="modal-header border-0"><h5 class="modal-title" id="photoTitle"></h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button></div>
+    <div class="modal-body"><img id="photoFull" src="" alt="" style="width:100%;height:auto"></div>
+  </div></div>
+</div>
+<section class="cta-band">
+  <div class="container reveal">
+    <p class="eyebrow">Let's Work Together</p>
+    <h2 class="section-title">Ready to Grow Your E-Commerce Business?</h2>
+    <p>Hand us your accounts, your tasks or your learning goals. Tell us where you are and we will map out the next step.</p>
+    <div class="cta-row"><a href="hire.html" class="btn-solid">Hire Us</a><a href="academy.html" class="btn-ghost">Join the Academy</a></div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand">Ecom Growth Station</div>
+        <p>An experienced e-commerce team (7+ years) that manages marketplace accounts, processes orders, hunts products, assists with LLC &amp; LTD formation and teaches digital commerce skills.</p>
+      </div>
+      <div class="col-6 col-lg-2"><h5>Company</h5><ul>
+        <li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="academy.html">Academy</a></li><li><a href="team.html">Team</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="join.html">Join Us</a></li></ul></div>
+      <div class="col-6 col-lg-3"><h5>Work With Us</h5><ul>
+        <li><a href="hire.html">Hire Us</a></li><li><a href="hire.html#task">Give Us Your Work</a></li><li><a href="academy.html#enroll">Enroll in the Academy</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="col-lg-3"><h5>Contact</h5><ul>
+        <li><a href="mailto:ecomgrowthstation00547@gmail.com">ecomgrowthstation00547@gmail.com</a></li><li><a href="tel:+923457077263">+92 345 7077263</a></li><li><a href="https://wa.me/923457077263" target="_blank" rel="noopener">WhatsApp us</a></li><li>Pakistan</li></ul></div>
+    </div>
+    <div class="footer-bottom">&copy; <span class="js-year"></span> Ecom Growth Station. All rights reserved. &middot; <a href="admin.html">Admin</a><br>
+    LLC &amp; LTD services are formation assistance and administrative coordination, not legal or tax advice. We do not guarantee sales or income; all engagement terms are agreed in writing.</div>
+  </div>
+</footer>
+<script src="vendor/bootstrap.bundle.min.js"></script>
+<script src="vendor/supabase.js"></script>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
